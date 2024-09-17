@@ -38,6 +38,11 @@ app = Flask(__name__)
 def funcionalidade_da_rota():
   '''do some stuff'''
   return jsonify(value)
+
+#adicionei o padrao if name main
+# e dentro coloqueo o app.run com o host zero para ser enxergado por todos os hosts
+if __name__ == '__main__':
+  app.run(host="0.0.0.0")
 ```
 
 ## - Addind a list to the file
